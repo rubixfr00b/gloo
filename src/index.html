@@ -1,5 +1,19 @@
 <html>
   <body>
-    <h1>yeet</h1>
+    <script>
+      window.tags = ['one', 'two', 'three'];
+    </script>
+
+    <h1>
+      <script data-gloo-ref="test script2"></script>
+    </h1>
+
+    <script data-gloo-src="test script2">
+      (function() {
+        return tags.map(tag => ({
+          innerText: tag,
+        }));
+      })
+    </script>
   </body>
 </html>
